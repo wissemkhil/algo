@@ -1,0 +1,21 @@
+ALGORITHM algorithm_cmpte
+VAR
+    nbrc,nbrv,nbrw:INTEGER;
+    c:CHAR;
+BEGIN
+nbrc=0;
+nbrv=0;
+nbrw=0;
+REPEAT
+    write("ecrire un message ");
+    read(c);
+    nbrc=nbrc+1;
+    IF (c="a" or c="e" or c="i" or c="u" or c="y" or c="o") THEN
+    nbrv=nbrv+1;
+    END_IF
+IF (c=""or c=".") THEN
+    nbrw=nbrw+1
+END_IF
+UNTIL (c=".");
+
+END
